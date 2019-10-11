@@ -4,14 +4,4 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>GreetingServlet</servlet-name>
-  	<display-name>GreetingServlet</display-name>
-  	<description>Mi primer Servlet</description>
-  	<servlet-class>ni.org.jug.servlet.GreetingServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-  	<servlet-name>GreetingServlet</servlet-name>
-  	<url-pattern>/GreetingServlet</url-pattern>
-  </servlet-mapping>
 </web-app>
