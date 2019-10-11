@@ -9,6 +9,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 <title>Insert title here</title>
 </head>
 <body>	
+	<a href="${pageContext.request.contextPath}/index.jsp">Inicio</a>
 	<% 
 		if(request.getAttribute("error") != null){
 	%>
