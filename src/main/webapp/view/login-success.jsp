@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Login satisfactorio</title>
 </head>
 <body>
-	Bienvenido <%= request.getParameter("username") %>
+	<h1>Bienvenido <%= request.getParameter("username") %> </h1>
 </body>
 </html> 
