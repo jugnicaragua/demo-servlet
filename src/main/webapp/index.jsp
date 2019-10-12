@@ -9,7 +9,10 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 	Login
 </a>
 
-<h2>Bienvenidos amig@s!</h2>
+<div>
+	<h2>Bienvenidos amig@s!</h2>
+</div>
+
 
 </body>
 </html>

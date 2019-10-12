@@ -10,18 +10,31 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 </head>
 <body>	
 	<a href="${pageContext.request.contextPath}/index.jsp">Inicio</a>
-	<% 
-		if(request.getAttribute("error") != null){
-	%>
-	<%= request.getAttribute("error") %>
-	<% } 
-	%>
-	<form action="${pageContext.request.contextPath}/login" method="post">
-		<label for="username">Username</label>
-		<input name="username" type="text" id="username" >
-		<label for="password">Password</label>
-		<input name="password" type="password" id="password">
-		<input type="submit" value="Aceptar" > 
-	</form>
+	
+	<div class="card" style="width:50%; margin-left: auto; margin-right: auto">
+		<div class="card-header">
+			Login
+		</div>
+		<div class="card-body">
+			<% 
+				if(request.getAttribute("error") != null){
+			%>
+			<p style="color:red"> <%= request.getAttribute("error") %></p>
+			<% } 
+			%>
+			<form action="${pageContext.request.contextPath}/login" method="post">
+				<div class="form-group">
+					<label for="username">Username</label>
+					<input class="form-control" name="username" type="text" id="username" >
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input class="form-control" name="password" type="password" id="password">
+				</div>			
+				<input class="btn btn-primary mb-2" type="submit" value="Aceptar" > 
+			</form>
+		</div>
+	</div>
+	
 </body>
 </html>
